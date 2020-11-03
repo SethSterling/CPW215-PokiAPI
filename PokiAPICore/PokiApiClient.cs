@@ -24,6 +24,11 @@ namespace PokiAPICore
         {
             name = name.ToLower(); // Pokemon name must be lower.
 
+            return await GetPokemonByNameOrId(name);
+        }
+
+        private static async Task<Pokemon> GetPokemonByNameOrId(string name)
+        {
             string url = $"https://pokeapi.co/api/v2/pokemon/{name}";
             HttpResponseMessage response = await client.GetAsync(url);
             if (response.IsSuccessStatusCode)
@@ -31,7 +36,7 @@ namespace PokiAPICore
                 string responseBody = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<Pokemon>(responseBody);
             }
-            else if(response.StatusCode == System.Net.HttpStatusCode.NotFound)
+            else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
             {
                 throw new ArgumentException($"{name} does not exist");
             }
@@ -41,9 +46,14 @@ namespace PokiAPICore
             }
         }
 
-        public void GetPokemonById(int id)
+        /// <summary>
+        /// Gets a Pokemon by their Pokedex ID Number
+        /// </summary>
+        /// <param name="id">Id of the pokemon</param>
+        /// <returns></returns>
+        public async Task<Pokemon> GetPokemonById(int id)
         {
-            throw new NotImplementedException();
+            return await GetPokemonByNameOrId(id.ToString());
         }
     }
 }
