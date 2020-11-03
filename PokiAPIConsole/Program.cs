@@ -15,9 +15,9 @@ namespace PokiAPIConsole
                 //Pokemon result = await client.GetPokemonByName("REGIGIGAS");
                 Pokemon result = await client.GetPokemonById(578);
                 Console.WriteLine($"Pokemon Id: {result.id} " +
-                    $"\nName: {result.name} " +
-                    $"\nWeight: {result.weight} " +
-                    $"\nHeight: {result.height}");
+                    $"\nName: {result.Name} " +
+                    $"\nWeight: {result.Weight} " +
+                    $"\nHeight: {result.Height}");
             }
             catch(ArgumentException)
             {

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokiAPICore", "PokiAPICore\PokiAPICore.csproj", "{9A75616F-D9B5-49A2-98C7-12C43B496382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokiAPICore", "PokiAPICore\PokiAPICore.csproj", "{9A75616F-D9B5-49A2-98C7-12C43B496382}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokiAPIConsole", "PokiAPIConsole\PokiAPIConsole.csproj", "{A0A0674B-8EEA-420A-B252-98FE89C099E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokiAPIConsole", "PokiAPIConsole\PokiAPIConsole.csproj", "{A0A0674B-8EEA-420A-B252-98FE89C099E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokiAPIWebsite", "PokiAPIWebsite\PokiAPIWebsite.csproj", "{B3B056FE-CBA0-40C9-BB6A-7260E88ED2AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A0A0674B-8EEA-420A-B252-98FE89C099E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0A0674B-8EEA-420A-B252-98FE89C099E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0A0674B-8EEA-420A-B252-98FE89C099E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B056FE-CBA0-40C9-BB6A-7260E88ED2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B056FE-CBA0-40C9-BB6A-7260E88ED2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B056FE-CBA0-40C9-BB6A-7260E88ED2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B056FE-CBA0-40C9-BB6A-7260E88ED2AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
